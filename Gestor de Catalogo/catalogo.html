@@ -23,7 +23,7 @@
                     <p class="card-text">Vienesa, tomate, palta y mayonesa.</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="producto-precio">$2.800</span>
-                        <a href="#" class="btn-solid theme-primary">Personalizar</a>
+                        <button type="button" class="btn-solid theme-primary" data-bs-toggle="dialog" data-bs-target="#exampleDialog"> Personalizar</button>
                     </div>
                 </div>
             </section>
@@ -77,10 +77,61 @@
     </div>
 </div>
 
+<!-- Modal de personalización (HU-02) -->
 
-    
+<dialog class="dialog" id="exampleDialog">
 
-    
+    <div class="dialog-header">
+        <h2 class="dialog-title">Personaliza tu completo italiano</h2>
+        <form method="dialog">
+            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+        </form>
+    </div>
+
+<!-- Personalizar Ingredientes -->
+  <div class="dialog-body">
+    <h6>Ingredientes</h6>
+
+        <div class="ingrediente">
+            <input type="checkbox" id="palta" checked>
+            <label for="palta">Palta</label>
+        </div>
+
+        <div class="ingrediente">
+            <input type="checkbox" id="tomate" checked>
+            <label for="tomate">Tomate</label>
+        </div>
+
+        <div class="ingrediente">
+            <input type="checkbox" id="mayonesa" checked>
+            <label for="mayonesa">Mayonesa</label>
+        </div>
+
+        <h6>Extras</h6>
+
+        <div class="ingrediente">
+            <input type="checkbox" id="queso">
+            <label for="queso">Queso extra (+$500)</label>
+        </div>
+
+        <div class="ingrediente">
+            <input type="checkbox" id="aji">
+            <label for="aji">Papas fritas (+$500)</label>
+        </div>
+
+        <h6>Cantidad</h6>
+        <input type="number" id="cantidad" value="1" min="1">
+
+    </div>
+
+
+  </div>
+  <!-- Botones  -->
+  <div class="dialog-footer">
+    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Cancelar</button>
+    <button type="button" class="btn-solid theme-primary">Agregar al pedido</button>
+  </div>
+</dialog>
     
 </body>
 </html>
