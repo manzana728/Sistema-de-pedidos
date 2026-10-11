@@ -17,3 +17,15 @@ body {
     height: 8rem;
     object-fit: cover;
 }
+
+.dialog{
+    background-color: white;
+    color: black;
+}
+
+.dialog-header{
+    justify-content: space-between;
+    display: flex;
+}
+
+
