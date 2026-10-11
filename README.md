@@ -7,10 +7,11 @@ El repositorio contiene **solo la interfaz** (prototipo); no incluye backend ni 
 
 ## Integrantes
 
-| Nombre completo | Usuario de GitHub |       Rama        |
-| Diego Quispe    |    `@Dfvg898`     | `feature/dquispe` |
-| Leonel Humire   |   `@manzana728`   | `feature/lhumire` |
-| Alonso Molina   |     `@vlonzz`     | `feature/amolina` |
+| Nombre completo | Usuario de GitHub | Rama              |
+|-----------------|-------------------|-------------------|
+| Diego Quispe    | `@Dfvg898`        | `feature/dquispe` |
+| Leonel Humire   | `@manzana728`     | `feature/lhumire` |
+| Alonso Molina   | `@vlonzz`         | `feature/amolina` |
 
 ## Framework de estilos
 
@@ -30,4 +31,4 @@ El proyecto tiene 30 historias de usuario (HU) agrupadas en 8 gestores. El repar
 | Gestor de Datos del Cliente y Entrega | HU-05, HU-06, HU-07, HU-08               | 4        | Alonso Molina | `feature/amolina` |
 | Gestor de Notificaciones              | HU-11, HU-12, HU-27, HU-28               | 4        | Alonso Molina | `feature/amolina` |
 | Gestor de Acceso y Seguridad          | HU-20, HU-21                             | 2        | Alonso Molina | `feature/amolina` |
-| **Total**                             |  **30**                                                                          |
+| **Total**                             |  **30**                                                                                 |
