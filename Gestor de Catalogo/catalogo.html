@@ -148,7 +148,7 @@
         <h2 class="offcanvas-title h5" id="tituloCarro">Mi pedido</h2>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
     </div>
-    <div class="offcanvas-body">
+    <div class="offcanvas-body d-flex flex-column">
         <ul class="list-group list-group-flush">
             <li class="list-group-item px-0 d-flex justify-content-between">
                 <div>
@@ -169,6 +169,22 @@
                 <span>$1.500</span>
             </li>
         </ul>
+
+        <!-- Resumen del pedido: subtotal, despacho y total (HU-04) -->
+        <div class="mt-auto border-top pt-3">
+            <div class="d-flex justify-content-between">
+                <span>Subtotal</span>
+                <span>$9.000</span>
+            </div>
+            <div class="d-flex justify-content-between text-muted">
+                <span>Despacho a domicilio</span>
+                <span>$2.000</span>
+            </div>
+            <div class="d-flex justify-content-between fw-bold fs-5 mt-2">
+                <span>Total</span>
+                <span>$11.000</span>
+            </div>
+        </div>
     </div>
 </div>
     
