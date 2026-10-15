@@ -61,6 +61,7 @@
                             <div class="acciones-pedido">
                                 <!-- Cambio de estado manual (HU-14) -->
                                 <button type="button" class="boton-estado"><i class="bi bi-arrow-right-circle"></i> Pasar a preparación</button>
+                                <button type="button" class="boton-cancelar" data-bs-toggle="modal" data-bs-target="#modalCancelar"><i class="bi bi-x-circle"></i> Cancelar pedido</button>
                             </div>
                     </article>
 
@@ -79,6 +80,7 @@
                             <div class="acciones-pedido">
                                 <!-- Cambio de estado manual (HU-14) -->
                                 <button type="button" class="boton-estado"><i class="bi bi-arrow-right-circle"></i> Pasar a preparación</button>
+                                <button type="button" class="boton-cancelar" data-bs-toggle="modal" data-bs-target="#modalCancelar"><i class="bi bi-x-circle"></i> Cancelar pedido</button>
                             </div>
                     </article>
             </div>
@@ -102,6 +104,7 @@
                             <div class="acciones-pedido">
                                 <!-- Cambio de estado manual (HU-14) -->
                                 <button type="button" class="boton-estado"><i class="bi bi-check-circle"></i> Marcar como listo</button>
+                                <button type="button" class="boton-cancelar" data-bs-toggle="modal" data-bs-target="#modalCancelar"><i class="bi bi-x-circle"></i> Cancelar pedido</button>
                             </div>
                     </article>
             </div>
@@ -126,6 +129,7 @@
                             <div class="acciones-pedido">
                                 <!-- Cambio de estado manual (HU-14) -->
                                 <button type="button" class="boton-estado"><i class="bi bi-truck"></i> Marcar en camino</button>
+                                <button type="button" class="boton-cancelar" data-bs-toggle="modal" data-bs-target="#modalCancelar"><i class="bi bi-x-circle"></i> Cancelar pedido</button>
                             </div>
                     </article>
             </div>
@@ -149,10 +153,43 @@
                             <div class="acciones-pedido">
                                 <!-- Cambio de estado manual (HU-14) -->
                                 <button type="button" class="boton-estado"><i class="bi bi-bag-check"></i> Marcar como entregado</button>
+                                <button type="button" class="boton-cancelar" data-bs-toggle="modal" data-bs-target="#modalCancelar"><i class="bi bi-x-circle"></i> Cancelar pedido</button>
                             </div>
                     </article>
                 </section>
             </div>
+
+    <!-- Modal de cancelación con motivo (HU-29) -->
+    <div class="modal fade" id="modalCancelar" tabindex="-1" aria-labelledby="tituloCancelar" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ventana">
+
+                <div class="modal-header">
+                    <h2 class="ventana-titulo" id="tituloCancelar">Cancelar pedido</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body">
+                    <label for="motivo" class="etiqueta-campo">Motivo de la cancelación</label>
+                    <select class="campo" id="motivo">
+                        <option selected disabled>Selecciona un motivo</option>
+                        <option>El cliente se arrepintió</option>
+                        <option>Producto sin stock</option>
+                        <option>Pago no confirmado</option>
+                        <option>Otro</option>
+                    </select>
+                    <label for="detalle" class="etiqueta-campo">Detalle (opcional)</label>
+                    <textarea class="campo" id="detalle" rows="3"></textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="boton-secundario" data-bs-dismiss="modal">Volver</button>
+                    <button type="button" class="boton-peligro" data-bs-dismiss="modal">Confirmar cancelación</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
             
 
