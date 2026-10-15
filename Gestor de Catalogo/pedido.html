@@ -22,7 +22,16 @@
     </nav>
 
     <main class="container-fluid py-3">
-        <h1 class="h4 mb-3">Pedidos activos</h1>
+        <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+            <h1 class="h4 mb-0 me-3">Pedidos activos</h1>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Filtro por canal">
+                <button type="button" class="btn btn-primary">Todos</button>
+                <button type="button" class="btn btn-outline-primary">Web</button>
+                <button type="button" class="btn btn-outline-primary">WhatsApp</button>
+                <button type="button" class="btn btn-outline-primary">Mesón</button>
+            </div>
+        </div>
+
 
         <!-- Tablero de pedidos por estado, de todos los canales (HU-15 y HU-26) -->
         <div class="row g-3">
