@@ -135,3 +135,56 @@
 .boton-estado:hover {
     background-color: #1971c2;
 }
+
+/* Cancelación de pedido con motivo (HU-29) */
+
+.boton-cancelar {
+    background-color: #fff;
+    color: #e03131;
+    border: 1px solid #e03131;
+    border-radius: 0.4rem;
+    padding: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.boton-cancelar:hover {
+    background-color: #e03131;
+    color: #fff;
+}
+
+.ventana {
+    border: none;
+    border-radius: 0.6rem;
+}
+
+.ventana-titulo {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.etiqueta-campo {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.campo {
+    display: block;
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.boton-secundario,
+.boton-peligro {
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.boton-secundario { background-color: #6c757d; }
+.boton-peligro { background-color: #e03131; }
+.boton-peligro:hover { background-color: #c92a2a; }
