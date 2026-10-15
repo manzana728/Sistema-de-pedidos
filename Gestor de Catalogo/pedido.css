@@ -19,6 +19,12 @@
 .columna-preparacion { 
     border-top-color: #f59f00
 }
+.columna-listo { 
+    border-top-color: #2f9e44
+}
+.columna-camino { 
+    border-top-color: #15aabf
+}
 
 .tarjeta-pedido {
     background-color: #fff;
